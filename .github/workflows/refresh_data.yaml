@@ -20,7 +20,7 @@ jobs:
           pip install pandas requests tqdm beautifulsoup4 lxml
       - name: Clone steam_stats
         run: |
-          git clone https://github.com/dbeley/steam_stats
+          git clone https://github.com/Jeeppinger/steam_stats/
       - name: Extract Steam appids of owned games
         run: |
           python steam_stats/scripts/get_ids.py -u $STEAM_USER_ID -f ids.csv -t owned
